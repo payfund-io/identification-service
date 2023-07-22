@@ -1,5 +1,5 @@
 {
-  "name": "authentication-service",
+  "name": "identification-service",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -21,9 +21,9 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "proto:install": "yarn add @payfund/grpc-proto",
-    "proto:authentication": "protoc --plugin=node_modules/.bin/protoc-gen-ts_proto.cmd -I=./node_modules/@payfund/grpc-proto/proto --ts_proto_out=src/protobuf node_modules/@payfund/grpc-proto/proto/authentication.proto --ts_proto_opt=nestJs=true --ts_proto_opt=fileSuffix=.pb",
+    "proto:identification": "protoc --plugin=node_modules/.bin/protoc-gen-ts_proto.cmd -I=./node_modules/@payfund/grpc-proto/proto --ts_proto_out=src/protobuf node_modules/@payfund/grpc-proto/proto/identification.proto --ts_proto_opt=nestJs=true --ts_proto_opt=fileSuffix=.pb",
     "proto:health": "protoc --plugin=node_modules/.bin/protoc-gen-ts_proto.cmd -I=./node_modules/@payfund/grpc-proto/proto --ts_proto_out=src/protobuf node_modules/@payfund/grpc-proto/proto/health.proto --ts_proto_opt=nestJs=true --ts_proto_opt=fileSuffix=.pb",
-    "proto:all": "yarn proto:account && yarn proto:authentication"
+    "proto:all": "yarn proto:account && yarn proto:identification"
   },
   "dependencies": {
     "@grpc/grpc-js": "^1.8.14",
