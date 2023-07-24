@@ -1,10 +1,10 @@
-import { CreateUserDTO, signInUserDTO } from "@/@types";
+import { SignUpUserDTO, signInUserDTO } from "@/@types";
 import { Injectable } from "@nestjs/common";
 
 @Injectable()
 export class AuthService{
 
-    signUp(data: CreateUserDTO){
+    signUp(data: SignUpUserDTO){
 
     }
 
