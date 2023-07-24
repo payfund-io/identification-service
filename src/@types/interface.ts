@@ -4,7 +4,7 @@ export enum HealthStatus {
   DOWN = 'down',
 }
 
-export interface CreateUserDTO {
+export interface SignUpUserDTO {
   email: string;
   password: string;
   username: string;
