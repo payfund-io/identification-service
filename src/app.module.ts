@@ -25,7 +25,6 @@ import { HealthModule } from './modules/common/health/health.module';
       password: configService.get('postgres.password'),
       database: configService.get('postgres.database'),
       entities: [__dirname + '/../**/*.entity.(js,ts)'],
-      // autoLoadEntities: true,
       synchronize: true,
     }),
   }),
