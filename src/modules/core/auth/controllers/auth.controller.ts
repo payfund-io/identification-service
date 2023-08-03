@@ -7,14 +7,13 @@ import { SignUpUserDTO, signInUserDTO } from '@/@types';
 export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
-  @GrpcMethod('AuthenticationService')
+  @GrpcMethod('IdentificationService', 'SignUp')
   signUp(data: SignUpUserDTO) {
     return this.authService.signUp(data);
   }
 
-  @GrpcMethod('AuthenticationService')
+  @GrpcMethod('IdentificationService', 'SignIn')
   signIn(data: signInUserDTO) {
     return this.authService.signIn(data);
   }
-
 }

@@ -7,8 +7,7 @@ export enum HealthStatus {
 export interface SignUpUserDTO {
   email: string;
   password: string;
-  username: string;
-  phone_number: number;
+  phoneNumber: number;
 }
 
 export interface signInUserDTO {
