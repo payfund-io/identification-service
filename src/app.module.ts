@@ -5,10 +5,12 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { getEnvironment } from './configs/env.configs';
 import { HealthModule } from './modules/common/health/health.module';
+import { AuthModule } from './modules/core/auth/auth.module';
 
 @Module({
   imports: [
     HealthModule,
+    AuthModule,
     ConfigModule.forRoot({
       load: getEnvironment(),
       isGlobal: true,
@@ -18,16 +20,16 @@ import { HealthModule } from './modules/common/health/health.module';
       imports: [ConfigModule],
       inject: [ConfigService],
       useFactory: (configService: ConfigService) => ({
-      type: 'postgres',
-      host: configService.get('postgres.host'),
-      port: configService.get('postgres.port'),
-      username: configService.get('postgres.username'),
-      password: configService.get('postgres.password'),
-      database: configService.get('postgres.database'),
-      entities: [__dirname + '/../**/*.entity.(js,ts)'],
-      synchronize: true,
+        type: 'postgres',
+        host: configService.get('postgres.host'),
+        port: configService.get('postgres.port'),
+        username: configService.get('postgres.username'),
+        password: configService.get('postgres.password'),
+        database: configService.get('postgres.database'),
+        entities: [__dirname + '/../**/*.entity.(js,ts)'],
+        synchronize: true,
+      }),
     }),
-  }),
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -849,10 +849,10 @@
     consola "^2.15.0"
     node-fetch "^2.6.1"
 
-"@payfund/grpc-proto@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@payfund/grpc-proto/-/grpc-proto-1.0.1.tgz#0777b8bab6266a9a070f1c500795cb060e7611ab"
-  integrity sha512-p9sElorFu1Qio7bSsqcBxADTeid58Rpg7n1w1bJ2LFYl4vCFuBoaD6+8PorQDdbyTWvUjE+4BSDn0EnXzYMbug==
+"@payfund/grpc-proto@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@payfund/grpc-proto/-/grpc-proto-1.0.7.tgz#73a4280a9722fc1d5863c87056ec69483e297f24"
+  integrity sha512-WXN6rFbKwWF7bPOPOb2ELDBxB55lc97VnPDeYNNI79jCcZQd3EUhzgOtkIhcRfdMF6I2/BEldi/ZpKTK+c/+ZA==
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
