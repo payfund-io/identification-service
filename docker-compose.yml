@@ -15,7 +15,7 @@ services:
   pgadmin:
     links:
       - postgres:postgres
-    container_name: payfund_api_prod
+    container_name: payfund_api_admin
     image: dpage/pgadmin4
     ports:
       - '8080:80'
