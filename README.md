@@ -7,7 +7,7 @@
 
 ## Description
 
-PayFund API Gateway framework TypeScript starter repository.
+Identification service framework TypeScript starter repository.
 
 ## Installation
 
